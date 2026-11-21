@@ -1,124 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sai Bhanu Prasad Narra — Software / AI Engineer</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1f2937; background: #f9fafb; line-height: 1.6; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
-  header { text-align: center; padding: 32px 0 8px; }
-  header h1 { font-size: 2rem; }
-  header p.role { color: #4b5563; font-size: 1.1rem; margin-top: 6px; }
-  header p.links { margin-top: 12px; }
-  header p.links a { color: #2563eb; text-decoration: none; margin: 0 8px; }
-  header p.links a:hover { text-decoration: underline; }
-  section { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin-top: 20px; }
-  h2 { font-size: 1.25rem; margin-bottom: 12px; border-bottom: 2px solid #2563eb; display: inline-block; padding-bottom: 4px; }
-  .tags span { display: inline-block; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 999px; padding: 3px 12px; margin: 3px 4px 3px 0; font-size: 0.9rem; }
-  .project { margin-bottom: 18px; }
-  .project:last-child { margin-bottom: 0; }
-  .project h3 { font-size: 1.05rem; }
-  .project h3 a { color: #2563eb; text-decoration: none; }
-  .project h3 a:hover { text-decoration: underline; }
-  .project p { color: #4b5563; margin-top: 4px; }
-  .project .stack { color: #6b7280; font-size: 0.9rem; margin-top: 4px; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 6px; }
-  footer { text-align: center; color: #6b7280; font-size: 0.9rem; margin-top: 28px; }
-</style>
+<title>Sai Bhanu Prasad Narra — Software Engineer</title>
+<meta name="description" content="Portfolio of Sai Bhanu Prasad Narra, Computer Science graduate (B.Tech, 2026) building full-stack and AI-powered applications.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <h1>Sai Bhanu Prasad Narra</h1>
-    <p class="role">Software / AI Engineer — B.Tech Computer Science, 2026</p>
-    <p class="links">
-      <a href="https://github.com/saibhanuprasadn">GitHub</a>
-      <a href="https://linkedin.com/in/saibhanuprasad-narra">LinkedIn</a>
-      <a href="mailto:narrasaibhanuprasad@gmail.com">Email</a>
-    </p>
-  </header>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home">Sai Bhanu Prasad Narra</a>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="theme-menu">
+        <button class="icon-btn" id="theme-btn" aria-haspopup="true" aria-expanded="false" title="Theme">
+          <span id="theme-icon" aria-hidden="true">&#9788;</span>
+          <span class="sr-only">Theme</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu">
+          <button data-theme-choice="light" role="menuitem">Light</button>
+          <button data-theme-choice="dark" role="menuitem">Dark</button>
+          <button data-theme-choice="system" role="menuitem">System</button>
+        </div>
+      </div>
+      <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</header>
 
-  <section>
-    <h2>About</h2>
-    <p>Entry-level Software / AI Engineer from Hyderabad, India. I build full-stack web applications and retrieval-augmented generation (RAG) systems — Python, Java and JavaScript — and I'm currently building autonomous AI agents that plan, use tools and self-correct. Looking for an entry-level Software or AI Engineering role.</p>
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="pill avail-pill"><span class="spark" aria-hidden="true">&#10022;</span> Available for Work</span>
+        <h1>Hello, I&rsquo;m<br>Sai Bhanu Prasad Narra</h1>
+        <p class="hero-sub">Software Engineer building <strong>full-stack</strong> and <strong>AI-powered</strong> applications</p>
+        <p class="hero-para">Computer Science graduate (B.Tech, 2026, CGPA 7.6) skilled in Python, Java, JavaScript, React and SQL &mdash; with hands-on experience in full-stack development, RAG chatbots and data dashboards.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="Bhanu_cv.pdf" download>&#11015; Download Resume</a>
+          <a class="btn btn-light" href="#projects">View My Work</a>
+        </div>
+        <div class="social-row">
+          <a class="social-btn" href="https://github.com/saibhanuprasadn" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a class="social-btn" href="https://www.linkedin.com/in/saibhanuprasad-narra" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a class="social-btn" href="mailto:narrasaibhanuprasad@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="portrait-wrap">
+          <img src="photo.jpg" alt="Portrait of Sai Bhanu Prasad Narra" class="portrait">
+          <span class="hire-badge"><span class="dot" aria-hidden="true"></span> Available for hire</span>
+        </div>
+      </div>
+    </div>
+    <div class="container stats-row">
+      <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Projects Built</span></div>
+      <div class="stat"><span class="stat-num">2</span><span class="stat-label">Internships</span></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Certifications</span></div>
+    </div>
+    <p class="scroll-cue"><a href="#skills">Scroll to explore <span aria-hidden="true">&#8595;</span></a></p>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3><a href="https://github.com/saibhanuprasadn/ai-document-assistant">AI Document Assistant</a></h3>
-      <p>RAG chatbot web app. Upload PDFs or text files, ask questions in plain English, and get answers grounded in your documents — with the exact source passages shown next to every answer. Retrieval uses TF-IDF vectors in a FAISS HNSW index, with optional Gemini-generated answers.</p>
-      <p class="stack">Flask · scikit-learn · FAISS · Gemini API · Python</p>
-    </div>
-    <div class="project">
-      <h3>Secure Virtual Voting System</h3>
-      <p>Voting system using facial authentication and blockchain for secure, verifiable votes.</p>
-      <p class="stack">Python · Django · OpenCV · SQL</p>
-    </div>
-    <div class="project">
-      <h3>Java Health Safe Cloud</h3>
-      <p>Electronic health record sharing with role-based access control and public-key infrastructure.</p>
-      <p class="stack">Java · SQL · Cloud · REST APIs · RBAC · PKI</p>
-    </div>
-    <div class="project">
-      <h3><a href="https://github.com/saibhanuprasadn/NewsApplication">News Application</a></h3>
-      <p>Full-stack news application with a responsive mobile-first front end.</p>
-      <p class="stack">MERN (MongoDB · Express · React · Node.js)</p>
-    </div>
-    <div class="project">
-      <h3><a href="https://github.com/saibhanuprasadn/Land-Registry">Land Registry</a></h3>
-      <p>Land registry smart contract project.</p>
-      <p class="stack">Solidity</p>
-    </div>
-    <div class="project">
-      <h3>Identification of Algorithm from the Given Dataset</h3>
-      <p>Machine-learning project that identifies the best-fit algorithm for a given dataset.</p>
-      <p class="stack">Flask · Scikit-learn · Pandas · NumPy</p>
-    </div>
-    <div class="project">
-      <h3>International Space Station Tracker</h3>
-      <p>Live tracker for the ISS position using the Open Notify API.</p>
-      <p class="stack">Python · Open Notify API</p>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-sub">My expertise across the modern development stack.</p>
+      <div class="skills-grid">
+        <article class="card skill-card">
+          <div class="card-icon" aria-hidden="true">&#60;/&#62;</div>
+          <h3>Programming Languages</h3>
+          <div class="tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>SQL</span></div>
+        </article>
+        <article class="card skill-card">
+          <div class="card-icon" aria-hidden="true">&#127760;</div>
+          <h3>Web Development</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>Spring Boot</span><span>Django</span><span>Flask</span></div>
+        </article>
+        <article class="card skill-card">
+          <div class="card-icon" aria-hidden="true">&#129302;</div>
+          <h3>Data &amp; AI</h3>
+          <div class="tags"><span>MySQL</span><span>MongoDB</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Scikit-learn</span><span>RAG</span><span>Prompt Engineering</span><span>Gemini API</span></div>
+        </article>
+        <article class="card skill-card">
+          <div class="card-icon" aria-hidden="true">&#128736;</div>
+          <h3>Tools</h3>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>REST APIs</span><span>Figma</span></div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Web Developer Intern</strong> — EY Global Delivery Services (remote), Nov 2024 – Jan 2025. Built full-stack web applications with the MERN stack, responsive React front ends, secure RESTful APIs, and MongoDB schemas and CRUD operations.</li>
-      <li><strong>Blockchain Technology Intern</strong> — VOIS for Tech (virtual), Jan – Feb 2025.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="tags">
-      <span>Python</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>React</span><span>Spring Boot</span><span>Flask</span><span>MySQL</span><span>MongoDB</span><span>Git</span><span>GitHub</span><span>REST APIs</span><span>RAG</span><span>LLM integrations</span><span>Gemini API</span><span>Claude</span><span>Cohere</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Scikit-learn</span><span>Figma</span>
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-sub">Internships where I built real software with real teams.</p>
+      <div class="exp-list">
+        <article class="card exp-card">
+          <div class="exp-icon" aria-hidden="true">&#128188;</div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <h3>Web Developer Intern &mdash; EY Global Delivery Services</h3>
+              <span class="exp-meta">Nov 2024 &ndash; Jan 2025 &middot; Remote</span>
+            </div>
+            <p>Developed full-stack web applications using the MERN stack during a six-week employability program, including responsive interfaces and database integration.</p>
+            <div class="tags"><span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span></div>
+          </div>
+        </article>
+        <article class="card exp-card">
+          <div class="exp-icon" aria-hidden="true">&#128188;</div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <h3>Blockchain Technology Internship &mdash; VOIS for Tech</h3>
+              <span class="exp-meta">Jan &ndash; Feb 2025 &middot; Virtual</span>
+            </div>
+            <p>Completed a virtual Blockchain Technology Internship with VOIS for Tech under AICTE, covering blockchain fundamentals and their applications.</p>
+            <div class="tags"><span>Blockchain</span></div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Understanding Large Language Models with Cohere API</li>
-      <li>Machine Learning for Cyber Security — C-DAC</li>
-      <li>Structure of Blockchain — VI</li>
-    </ul>
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">Education &amp; Certifications</h2>
+      <p class="section-sub">My academic background and certifications.</p>
+      <div class="exp-list">
+        <article class="card exp-card">
+          <div class="exp-icon" aria-hidden="true">&#127891;</div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <h3>B.Tech, Computer Science &mdash; Teegala Krishna Reddy Engineering College</h3>
+              <span class="exp-meta">2023 &ndash; 2026 &middot; CGPA 7.6/10</span>
+            </div>
+            <p>Bachelor of Technology in Computer Science, Hyderabad.</p>
+          </div>
+        </article>
+        <article class="card exp-card">
+          <div class="exp-icon" aria-hidden="true">&#127942;</div>
+          <div class="exp-body">
+            <div class="exp-head">
+              <h3>Certifications</h3>
+            </div>
+            <div class="tags"><span>Understanding Large Language Models with Cohere API</span><span>C-DAC ML for Cyber Security</span><span>VI Structure of Blockchain</span><span>Tata Strive &mdash; Java Full Stack Development</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:narrasaibhanuprasad@gmail.com">narrasaibhanuprasad@gmail.com</a><br>
-    GitHub: <a href="https://github.com/saibhanuprasadn">github.com/saibhanuprasadn</a><br>
-    LinkedIn: <a href="https://linkedin.com/in/saibhanuprasad-narra">linkedin.com/in/saibhanuprasad-narra</a></p>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">A few things I have built &mdash; code, data and working software.</p>
+      <div class="projects-grid">
+        <article class="card project-card">
+          <div class="project-thumb thumb-tasks" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>Multitask &mdash; Team Task Manager</h3>
+            <p>Team task management system with a MySQL database, a Power BI dashboard for overdue work and workload, and AI-based priority suggestions for every task.</p>
+            <div class="tags"><span>MySQL</span><span>SQL</span><span>Power BI</span><span>Python</span><span>Gemini API</span></div>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="https://github.com/saibhanuprasadn/multitask-team-task-manager" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card project-card">
+          <div class="project-thumb thumb-rag" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/><path d="M8 9h8M8 13h5"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>AI Document Assistant</h3>
+            <p>RAG chatbot that answers questions from your own documents &mdash; Flask and TF-IDF, upgraded to a FAISS vector index for fast, relevant retrieval.</p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>FAISS</span><span>Scikit-learn</span><span>RAG</span></div>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="https://github.com/saibhanuprasadn/ai-document-assistant" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card project-card">
+          <div class="project-thumb thumb-web" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>This portfolio &mdash; a clean, responsive single-page site with a light and dark theme, built to present my work to recruiters.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="https://github.com/saibhanuprasadn/saibhanuprasadn.github.io" target="_blank" rel="noopener">Code</a>
+              <a class="btn btn-dark" href="https://saibhanuprasadn.github.io/" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="more-link"><a href="https://github.com/saibhanuprasadn" target="_blank" rel="noopener">View all projects on GitHub &rarr;</a></p>
+    </div>
   </section>
 
-  <footer>Hyderabad, India · B.Tech CSE, Teegala Krishna Reddy Engineering College, 2026</footer>
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let&rsquo;s Work Together</h2>
+      <p class="section-sub">I&rsquo;m looking for an entry-level Software or AI Engineering role. Let&rsquo;s talk about your team&rsquo;s next project.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="card contact-card">
+            <div class="card-icon" aria-hidden="true">&#9993;</div>
+            <div><h3>Email</h3><p><a href="mailto:narrasaibhanuprasad@gmail.com">narrasaibhanuprasad@gmail.com</a></p></div>
+          </div>
+          <div class="card contact-card">
+            <div class="card-icon" aria-hidden="true">&#9742;</div>
+            <div><h3>Phone</h3><p><a href="tel:+916302843307">+91-6302843307</a></p></div>
+          </div>
+          <div class="card contact-card">
+            <div class="card-icon" aria-hidden="true">&#9873;</div>
+            <div><h3>Location</h3><p>Hyderabad, India &middot; Available for Remote Work</p></div>
+          </div>
+        </div>
+        <form class="card contact-form" id="contact-form">
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <label>Your Name<input type="text" id="cf-name" required placeholder="Your name"></label>
+            <label>Your Email<input type="email" id="cf-email" required placeholder="you@example.com"></label>
+          </div>
+          <label>Subject<input type="text" id="cf-subject" required placeholder="Subject"></label>
+          <label>Your Message<textarea id="cf-message" rows="5" required placeholder="Your message"></textarea></label>
+          <button class="btn btn-dark btn-block" type="submit">&#9992; Send Message</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
-</div>
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-name">Sai Bhanu Prasad Narra</p>
+    <p class="footer-tag">Software Engineer | Full-Stack &amp; AI Developer</p>
+    <p class="footer-copy">&copy; <span id="year">2026</span> Sai Bhanu Prasad Narra. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
